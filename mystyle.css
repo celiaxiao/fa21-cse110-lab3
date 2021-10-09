@@ -1,0 +1,135 @@
+body {
+    background-color: lightblue;
+  }
+  * {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  a[class~="form"] {
+    text-decoration: dashed;
+  }
+  
+  h1 {
+      font-family: "Abril Fatface", cursive;
+      position: relative;
+    text-align: center;
+    color: cornflowerblue;
+    margin-left: 20px; /* absolute unit 1*/
+    margin-top: 1ch; /* relative unit 1*/
+    margin-bottom: 1cm; /* absolute unit 2*/
+  }
+
+  h2 {
+    
+      margin: 10px 5px 25px 5px;
+      text-decoration: underline;
+      color: rgba(100,100,100,0.5) /* red, green, blue, alpha values */
+  }
+
+  h3 {
+      
+      margin: auto;
+      color: #FFF; /* hex color */
+  }
+  span {
+      display: flex;
+      order:initial;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  #htmlLable {
+    color:gray;
+  }
+  .formSet {
+      display: grid;
+      grid-column-start: 2;
+      grid-column-end: five;
+      grid-row-start: row1-start;
+      grid-row-end: 3;
+      align-self: center;
+  }
+  p {
+    position:absolute;
+    padding-left: 1em; /* relative unit 2*/
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  strong, em {
+    display: inline;
+    
+  }
+
+  label {
+    min-width: 5px;
+    min-height: 5px;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+  }
+
+  div label { /* Descendant Combinator (element element) */
+    font-size: small;
+  }
+
+  /* List items that are children of the "my-things" list */
+ul > li {
+  margin: 2em;
+}
+
+ol > li {
+  margin-top: 30px;
+}
+
+  button{
+    border-style: solid;
+    border-radius: 5%; /* relative unit 3 */
+    border-color: dodgerblue;
+    border-width: 0.5mm; /* absolute unit 3*/
+    color: white; /* text color */
+    padding: 5px;
+    background-color: hsl(248, 53%, 58%);
+  }
+/* Paragraphs that are siblings of and
+   subsequent to any image */
+   p ~ b {
+    color: red;
+  }
+
+  button:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+  }
+
+  input:active {
+    background-color: lightgrey;
+  }
+
+  input + label {
+    font-style: italic;
+  }
+
+  .single {
+    display: block;
+  }
+
+  img.single {
+      height: 400px;   
+  }
+  audio {
+      width: 300px
+  }
+
+  @media screen and (max-width: 900px) {
+      .img {
+          width:50%;
+      }
+  }
+  @media screen and (max-width: 600px) {
+    .img {
+        width:100%;
+    }
+
+
+}
